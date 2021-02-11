@@ -1,0 +1,45 @@
+        body {
+            font-size: 16px;
+        }
+        
+        h1 {
+            font-family: sans-serif;
+            font-size: 65px;
+            color: yellow;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 3em;
+        }
+
+        ul {
+            background-color: violet;
+        }
+
+        .new-color {
+            background-color: tomato;
+        }
+
+        #first-line {
+            font-style: italic;
+            line-height: normal;
+            text-align: end;
+            text-decoration: dashed;
+            background-color: yellow;
+        }
+
+        #second-line {
+            font-style: oblique;
+            line-height: 2em;
+            text-align: justify;
+            text-decoration: dotted;
+            background-color: red;
+        }
+
+        #third-line {
+            font-style: unset;
+            text-align: center;
+            text-decoration: double;
+            background-color: brown;
+        }
