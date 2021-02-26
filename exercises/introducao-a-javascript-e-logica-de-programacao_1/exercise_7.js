@@ -25,3 +25,5 @@ switch (true) {
   default:
     console.log('Nota inválida! Informe outra nota.');
 }
+
+// Fonte para escrever linha 3 do meu código: https://stackoverflow.com/questions/46700224/how-can-you-use-comparisons-in-switch-statements
