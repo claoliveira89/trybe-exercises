@@ -14,3 +14,38 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
+function fridayClass(fridayDays, day) {
+  for (let index = 0; index < fridayDays.length; index += 1) {
+    if (parseInt(day.innerText) === fridayDays[index]) {
+/** Source: https://www.w3schools.com/howto/howto_js_add_class.asp */
+      day.classList.add('friday');
+    }
+  };
+}
+
+function holidayClass(holidayDays, day) {
+  for (let index = 0; index < holidayDays.length; index += 1) {
+    if (parseInt(day.innerText) === holidayDays[index]) {
+/** Source: https://www.w3schools.com/howto/howto_js_add_class.asp */
+      day.classList.add('holiday');
+    }
+  }
+};
+
+function createCalendarDays() {
+  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  const calendarDays = document.querySelector('#days');
+
+  for (let index = 0; index < dezDaysList.length; index += 1) {
+    const day = dezDaysList[index];
+    const dayListItem = document.createElement('li');
+    dayListItem.innerText = day;
+    dayListItem.className = 'day';
+    holidayClass([24, 25, 31], dayListItem);
+    fridayClass([4, 11, 18, 25], dayListItem);
+
+    calendarDays.appendChild(dayListItem);
+  }
+};
+
+createCalendarDays();
