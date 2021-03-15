@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <h1>Formulário para Cadastro</h1>
+  <form id="form-cadastro" action="" method="GET">
+    <fieldset id="form-cadastro" name="dados-pessoais">
+      <legend>Dados Pessoais</legend>
+      <label for="input-nome">Nome Completo:
+        <input type="text" name="nome" id="input-nome" required placeholder="Digite seu nome" maxlength="40">
+      </label>
+      <label for="input-email">E-mail:
+        <input type="text" name="email" id="input-email" required placeholder="Digite seu email" maxlength="50">
+      </label>
+      <label for="input-cpf">CPF:
+        <input type="text" name="cpf" id="input-cpf" required placeholder="Digite seu CPF" maxlength="11">
+      </label>
+      <br>
+      <label for="input-endereco">Endereço:
+        <input type="text" name="endereco" id="input-endereco" required placeholder="Digite seu endereço" maxlength="200">
+      </label>
+      <label for="input-cidade">Cidade:
+        <input type="text" name="cidade" id="input-cidade" required placeholder="Digite sua cidade" maxlength="28">
+      </label>
+      <p>Escolha seu estado:</p>
+      <select name="estado" id="input-estado" required>
+      </select>
+      <p>Tipo:</p>
+        <label for="input-tipo-casa"><input type="radio" name="tipo" id="input-tipo-casa" required value="casa">Casa</label>
+        <label for="input-tipo-apartamento"><input type="radio" name="tipo" id="input-tipo-apartamento" required value="apartamento">Apartamneto</label>
+      
+    </fieldset>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
