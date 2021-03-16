@@ -13,4 +13,8 @@ function stateOptions(statesList) {
   }
 }
 
+function checkDateFormat() {
+  
+}
+
 stateOptions(states);
