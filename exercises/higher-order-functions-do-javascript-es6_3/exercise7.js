@@ -65,6 +65,7 @@ const books = [
 
 const expectedResult = 'O Senhor dos Anéis';
 
+/** Source: Ajuda do Luan Ramalho - Turma 10- Tribo A */
 function authorWith3DotsOnName() {
   return books.filter((book) => book.author.name.split(' ')
     .filter((word) => word
