@@ -8,3 +8,6 @@ SELECT 'Clarice', 'Oliveira', 'Belo Horizonte', '32';
         identifique cada coluna usando o AS , que é chamado de alias na linguagem SQL
         ( alias é como um apelido no português); */
 SELECT 'Clarice' AS nome, 'Oliveira' AS sobrenome, 'Belo Horizonte' AS 'cidade natal', '32' AS idade;
+
+-- 1.4) Qual é o resultado de 13 * 8 ? Descubra usando apenas o SELECT;
+SELECT 13 * 8;
