@@ -11,3 +11,6 @@ SELECT 'Clarice' AS nome, 'Oliveira' AS sobrenome, 'Belo Horizonte' AS 'cidade n
 
 -- 1.4) Qual é o resultado de 13 * 8 ? Descubra usando apenas o SELECT;
 SELECT 13 * 8;
+
+-- 1.5) Monte uma query que exiba a data e hora atuais. Dê a essa coluna o nome "Data Atual".
+SELECT now() AS 'Data Atual';
