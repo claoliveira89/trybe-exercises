@@ -7,3 +7,7 @@ SELECT first_name, last_name FROM sakila.customer;
 
 -- 2.3) Escreva uma query que exiba todas as colunas da tabela rental ;
 SELECT * FROM sakila.rental;
+
+/* 2.4) Escreva uma query que exiba o título, a descrição e a data de lançamento dos filmes
+        registrados na tabela film ; */
+SELECT title, description, release_year FROM sakila.film;
