@@ -5,3 +5,8 @@ SELECT COUNT(password) FROM sakila.staff;
 -- 1.2) Quantas pessoas temos no total trabalhando para nossa empresa?
 SELECT COUNT(active) FROM sakila.staff WHERE  active = '1';
         -- RESPOSTA: 2
+
+-- 1.3) Quantos emails temos cadastrados nessa tabela?
+SELECT COUNT(email) FROM sakila.staff;
+        -- RESPOSTA: 2
+        
