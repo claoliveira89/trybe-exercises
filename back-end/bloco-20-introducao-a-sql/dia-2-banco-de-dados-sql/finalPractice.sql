@@ -16,3 +16,6 @@ SELECT * FROM Scientists.Scientists;
 /* 6) Escreva uma query para exibir o nome como "Nome do Projeto" e as horas como
       "Tempo de Trabalho" de cada projeto. */
 SELECT Name AS "Nome do Projeto", Hours AS "Tempo de Trabalho" FROM Scientists.Projects;
+
+-- 7) Escreva uma query para exibir o nome dos cientistas em ordem alfabética.
+SELECT Name FROM Scientists.Scientists ORDER BY Name ASC;
