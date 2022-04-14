@@ -40,3 +40,17 @@ SELECT Name FROM Scientists.Projects ORDER BY Hours DESC LIMIT 1;
 
 --13) Escreva uma query para exibir o nome do segundo projeto com menor quantidade de horas.
 SELECT Name FROM Scientists.Projects ORDER BY Hours ASC LIMIT 1 OFFSET 1;
+
+/* 14) Escreva uma query para exibir todas as informações dos cinco projetos com a menor quantidade
+       de horas. */
+SELECT * FROM Scientists.Projects ORDER BY Hours ASC LIMIT 5;
+
+/* 15) Escreva uma query que exiba a string "Existem Number cientistas na tabela Scientists.", em que
+       Number se refira a quantidade de cientistas. */
+/* Source: https://www.toolbox.com/tech/oracle/question/select-with-concatenation-cast-and-count-050406/ */
+SELECT CONCAT('Existem ', the_count, ' cientistas na tabela Scientists.')
+FROM
+(
+    SELECT COUNT(*) AS the_count
+    FROM Scientists
+) Scientists;
