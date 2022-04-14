@@ -9,3 +9,6 @@ SELECT DISTINCT Nome FROM Escola.Estudantes;
 
 -- 1.4) Quantas linhas você encontraria na query anterior?
 4
+
+-- 1.5) Monte uma query para encontrar somente as idades únicas.
+SELECT DISTINCT Idade FROM Escola.Estudantes;
