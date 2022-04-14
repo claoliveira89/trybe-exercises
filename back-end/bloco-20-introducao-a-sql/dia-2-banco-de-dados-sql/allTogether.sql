@@ -12,3 +12,7 @@ SELECT COUNT(*) FROM sakila.film;
 -- Para os exercícios a seguir, vamos usar a tabela sakila.actor
 -- 2.1) Escreva uma query que exiba apenas os sobrenomes únicos cadastrados.
 SELECT DISTINCT last_name FROM sakila.actor;
+
+-- 2.2) Quantos sobrenomes únicos temos na tabela?
+SELECT COUNT(DISTINCT last_name) FROM sakila.actor;
+        -- RESPOSTA: 121
