@@ -6,3 +6,6 @@ SELECT REPLACE('Você já ouviu falar do DuckDuckGo?', 'DuckDuckGo', 'Google');
 
 -- 1.3 ) Utilizando uma query , encontre quantos caracteres temos em 'Uma frase qualquer'.
 SELECT CHAR_LENGTH('Uma frase qualquer');
+
+-- 1.4) Extraia e retorne a palavra "JavaScript" da frase 'A linguagem JavaScript está entre as mais usadas' .
+SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', 13, 10);
