@@ -6,3 +6,4 @@
         E finalmente, a quantidade total de filmes cadastrados na tabela sakila.film como 'Filmes
         Registrados'. */
 SELECT AVG(length) AS 'Média de Duração' FROM sakila.film;
+SELECT MIN(length) AS 'Duração Mínima' FROM sakila.film;
