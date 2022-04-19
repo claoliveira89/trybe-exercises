@@ -6,3 +6,8 @@ SELECT active, COUNT(customer_id)FROM sakila.customer GROUP BY active;
         inativos por loja. Os resultados devem conter o ID da loja , o status dos clientes (ativos ou
         inativos) e a quantidade de clientes por status . */
 SELECT store_id, active, COUNT(*) FROM sakila.customer GROUP BY store_id, active;
+
+/* 1.3) Monte uma query que exiba a média de duração de locação por classificação indicativa ( rating )
+        dos filmes cadastrados na tabela sakila.film . Os resultados devem ser agrupados pela
+        classificação indicativa e ordenados da maior média para a menor.*/
+SELECT rating, AVG(length) FROM sakila.film GROUP BY rating ORDER BY AVG(length) DESC;
