@@ -12,3 +12,7 @@ SELECT JOB_ID, AVG(SALARY) AS media_salarial
 FROM hr.employees
 GROUP BY JOB_ID
 ORDER BY media_salarial DESC;
+
+/* 1.4) Escreva uma query que exiba a quantidade de dinheiro necessária para realizar o pagamento de
+        todas as pessoas funcionárias.*/
+SELECT SUM(SALARY) FROM hr.employees;
