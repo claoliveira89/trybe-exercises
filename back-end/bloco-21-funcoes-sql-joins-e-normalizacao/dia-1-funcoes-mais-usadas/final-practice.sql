@@ -81,3 +81,8 @@ FROM hr.employees;
 
 /* 1.16) Escreva uma query que exiba os nomes dos funcionários em letra maiúscula.*/
 SELECT CONCAT(UCASE(FIRST_NAME), ' ', UCASE(LAST_NAME)) AS Nome FROM hr.employees;
+
+/* 1.17) Escreva uma query que exiba o sobrenome e a data de contratação de todos os funcionário
+         contratados em julho de 1987.*/
+SELECT LAST_NAME AS Sobrenome, HIRE_DATE AS 'Data de Contratação' FROM hr.employees
+WHERE YEAR(HIRE_DATE) = 1987 AND MONTH(HIRE_DATE) = 7;
