@@ -63,3 +63,8 @@ WHERE phone_number LIKE '515%';
 /* 1.12) Escreva uma query que só exiba as informações dos funcionários cujo o primeiro nome tenha
          oito ou mais caracteres.*/
 SELECT * FROM hr.employees WHERE CHAR_LENGTH(FIRST_NAME) >= 8;
+
+/* 1.13) Escreva uma query que exiba as seguintes informações de cada funcionário: id , primeiro nome
+         e ano no qual foi contratado (exiba somente o ano).*/
+SELECT EMPLOYEE_ID AS id, FIRST_NAME AS 'primeiro nome', YEAR(HIRE_DATE) AS 'ano do contrato'
+FROM hr.employees;
