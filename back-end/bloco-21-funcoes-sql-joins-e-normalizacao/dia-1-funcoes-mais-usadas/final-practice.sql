@@ -78,3 +78,6 @@ FROM hr.employees;
          e mês no qual foi contratado (exiba somente o mês).*/
 SELECT EMPLOYEE_ID AS id, FIRST_NAME AS 'primeiro nome', MONTH(HIRE_DATE) AS 'mês do contrato'
 FROM hr.employees;
+
+/* 1.16) Escreva uma query que exiba os nomes dos funcionários em letra maiúscula.*/
+SELECT CONCAT(UCASE(FIRST_NAME), ' ', UCASE(LAST_NAME)) AS Nome FROM hr.employees;
